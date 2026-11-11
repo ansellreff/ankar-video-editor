@@ -14,7 +14,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / (sys.argv[sys.argv.index("--out") + 1] if "--out" in sys.argv else "requirements-lock.txt")
-SKIP = {"pip", "setuptools", "wheel"}
+SKIP = {"pip"}                                   # setuptools stays: torch needs it on Python 3.12
 DEV_ONLY = {"pytest", "iniconfig", "pluggy", "pygments", "colorama"}   # kept: tests are part of the download
 OK_TAG = re.compile(r"-(cp312-cp312|cp312-abi3|cp3\d+-abi3|py3-none|py2\.py3-none|cp312-none)-(win_amd64|any)\.whl$")
 

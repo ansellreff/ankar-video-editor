@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="referrer" content="same-origin" />
+  <title>API Keys · AnKar Video Editor</title>
+  <link rel="stylesheet" href="/web/keys.css" />
+</head>
+<body>
+  <main class="wrap">
+    <header class="top">
+      <div class="brand"><span class="logo">▶</span> AnKar Video Editor</div>
+      <h1>API Keys</h1>
+      <p class="lead">Your own keys for the AI features. They are encrypted on this computer, never shown again after
+        saving, never sent to the browser, and never written into projects, chats, exports or logs.</p>
+    </header>
+
+    <section id="locked" class="notice warn hidden"></section>
+
+    <section id="setup" class="notice hidden">
+      <h2>Create your password</h2>
+      <p>You'll need it every time you add, change or remove a key. It is stored on this PC only, as a one-way hash —
+        nobody (not even AnKar) can read it back, so pick one you'll remember.</p>
+      <form id="setupForm" class="pwform" autocomplete="off">
+        <label>New password (at least <span class="minLen">10</span> characters)
+          <input id="sNew" class="input" type="password" autocomplete="new-password" /></label>
+        <label>Type it again
+          <input id="sNew2" class="input" type="password" autocomplete="new-password" /></label>
+        <p id="sErr" class="err hidden"></p>
+        <button type="submit" class="btn primary">Create password</button>
+      </form>
+    </section>
+
+    <section id="keysArea">
+      <h2>Keys used by AnKar Video Editor</h2>
+      <div id="services" class="cards"></div>
+    </section>
+
+    <section id="customArea">
+      <div class="row">
+        <h2>Your other keys</h2>
+        <button id="addCustom" class="btn">+ Add another key</button>
+      </div>
+      <div id="custom" class="cards"></div>
+      <p id="noCustom" class="muted">No other keys saved.</p>
+    </section>
+
+    <section class="safety">
+      <h2>How your keys are protected</h2>
+      <ul>
+        <li><b>Password</b> needed to add, change or remove a key (5 wrong tries → locked for 5 minutes).</li>
+        <li><b>Encrypted</b> on disk (<span id="enc">AES-256-GCM</span>); the files are git-ignored, so they never go to GitHub.</li>
+        <li><b>Write-only</b>: after saving, only the last 4 characters are ever shown.</li>
+        <li><b>Hidden everywhere</b>: anything that looks like a key is removed from messages, the AI chat and logs.</li>
+        <li><b>Only this app</b> can talk to the key page (other websites are blocked).</li>
+        <li>Before you push to GitHub, run <code>python -m scripts.check_secrets</code> (or enable the pre-commit hook).</li>
+      </ul>
+      <p class="muted" id="pwInfo"></p>
+      <button id="changePw" class="btn hidden">Change password</button>
+    </section>
+  </main>
+
+  <div id="pwModal" class="scrim hidden">
+    <form id="pwForm" class="dialog" autocomplete="off">
+      <h3>Change password</h3>
+      <label>Current password
+        <input id="pCur" class="input" type="password" autocomplete="current-password" /></label>
+      <label>New password (at least <span class="minLen">10</span> characters)
+        <input id="pNew" class="input" type="password" autocomplete="new-password" /></label>
+      <label>Type the new one again
+        <input id="pNew2" class="input" type="password" autocomplete="new-password" /></label>
+      <p id="pErr" class="err hidden"></p>
+      <div class="acts">
+        <button type="button" id="pCancel" class="btn">Cancel</button>
+        <button type="submit" id="pOk" class="btn primary">Change</button>
+      </div>
+    </form>
+  </div>
+
+  <div id="modal" class="scrim hidden">
+    <form id="form" class="dialog" autocomplete="off">
+      <h3 id="mTitle">Add key</h3>
+      <p id="mHint" class="muted"></p>
+      <label id="nameRow" class="hidden">Key name (lowercase, e.g. openai_api_key)
+        <input id="fName" class="input" maxlength="48" spellcheck="false" autocomplete="off" />
+      </label>
+      <label id="labelRow" class="hidden">Description (optional)
+        <input id="fLabel" class="input" maxlength="60" autocomplete="off" />
+      </label>
+      <label id="valueRow">API key
+        <span class="pw"><input id="fValue" class="input" type="password" spellcheck="false" autocomplete="new-password" />
+          <button type="button" id="toggle" class="btn ghost small">Show</button></span>
+      </label>
+      <label>Your password
+        <input id="fPass" class="input" type="password" autocomplete="current-password" />
+      </label>
+      <p id="mErr" class="err hidden"></p>
+      <div class="acts">
+        <button type="button" id="cancel" class="btn">Cancel</button>
+        <button type="submit" id="ok" class="btn primary">Save</button>
+      </div>
+    </form>
+  </div>
+  <script type="module" src="/web/js/keys.js"></script>
+</body>
+</html>

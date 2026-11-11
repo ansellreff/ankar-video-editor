@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reset your password · AnKar Video Editor</title>
+<meta name="description" content="Get a one-time code by email to set a new AnKar Video Editor password.">
+<meta name="referrer" content="same-origin">
+<meta property="og:title" content="Reset your password · AnKar Video Editor">
+<meta property="og:description" content="Get a one-time code by email to set a new AnKar Video Editor password.">
+<meta property="og:image" content="/img/editor.webp">
+<link rel="icon" href="/img/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/css/site.css">
+<script src="/js/site.js" defer></script>
+</head>
+<body data-page="forgot">
+<header class="nav"><div class="wrap">
+  <a class="brand" href="/"><span class="logo">&#9654;</span>AnKar Video Editor</a>
+  <nav>
+    <a href="/start">Get started</a>
+    <a href="/whatsnew">What's new</a>
+    <a href="#" data-github class="hidden">GitHub</a>
+    <a href="/signin" id="navAcct" class="btn small primary">Sign in</a>
+  </nav>
+</div></header>
+<div class="wrap"><div id="flash" class="msg hidden" role="status"></div></div>
+<main class="auth">
+  <div class="card">
+    <h1>Reset your password</h1>
+    <p id="forgotOff" class="msg info hidden">Password reset by email isn't switched on for this site yet. If you can't remember your password, create a new account.</p>
+    <form id="step1" class="stack">
+      <p class="muted small">If your account has an email saved, we'll send a 6-digit code to it.</p>
+      <label>Username
+        <input type="text" name="username" autocomplete="username" required autocapitalize="none" spellcheck="false"></label>
+      <p class="msg hidden"></p>
+      <button type="submit" class="btn primary">Send me a code</button>
+    </form>
+    <form id="step2" class="stack hidden">
+      <p id="sent" class="msg hidden"></p>
+      <label>6-digit code
+        <input type="text" name="code" inputmode="numeric" autocomplete="one-time-code" maxlength="6" required class="code-input"></label>
+      <label>New password
+        <input type="password" name="new" autocomplete="new-password" required></label>
+      <label>New password again
+        <input type="password" name="new2" autocomplete="new-password" required></label>
+      <p class="msg hidden"></p>
+      <button type="submit" class="btn primary">Set new password</button>
+      <p class="hint">The code works once, for 15 minutes. All other signed-in browsers are signed out.</p>
+    </form>
+  </div>
+  <div class="alt"><a href="/signin">Back to sign in</a></div>
+</main>
+
+<footer><div class="wrap">
+  <span>AnKar Video Editor · free &amp; open source (MIT)</span><span class="sp"></span>
+  <a href="/privacy">Privacy</a><a href="/terms">Terms</a><a href="/whatsnew">What's new</a><a href="#" data-github class="hidden">Source code</a>
+</div></footer>
+</body>
+</html>

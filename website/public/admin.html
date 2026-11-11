@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Admin · AnKar Video Editor</title>
+<meta name="description" content="Anonymous usage counts for the AnKar Video Editor website.">
+<meta name="referrer" content="same-origin">
+<meta property="og:title" content="Admin · AnKar Video Editor">
+<meta property="og:description" content="Anonymous usage counts for the AnKar Video Editor website.">
+<meta property="og:image" content="/img/editor.webp">
+<link rel="icon" href="/img/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/css/site.css">
+<script src="/js/site.js" defer></script>
+</head>
+<body data-page="admin">
+<header class="nav"><div class="wrap">
+  <a class="brand" href="/"><span class="logo">&#9654;</span>AnKar Video Editor</a>
+  <nav>
+    <a href="/start">Get started</a>
+    <a href="/whatsnew">What's new</a>
+    <a href="#" data-github class="hidden">GitHub</a>
+    <a href="/signin" id="navAcct" class="btn small primary">Sign in</a>
+  </nav>
+</div></header>
+<div class="wrap"><div id="flash" class="msg hidden" role="status"></div></div>
+<main class="wrap doc">
+  <h1>Admin</h1>
+  <p id="notAdmin" class="msg err hidden">This page is only for the site owner.</p>
+
+  <div id="setup" class="card hidden">
+    <h2>Set up your authenticator</h2>
+    <p class="muted">The admin page needs a 6-digit code from an authenticator app (Google Authenticator, Microsoft Authenticator, 1Password…) every time.</p>
+    <form id="setupForm" class="stack">
+      <label>Your password <input type="password" name="password" autocomplete="current-password" required></label>
+      <p class="msg hidden"></p>
+      <button type="submit" class="btn primary">Show the setup code</button>
+    </form>
+    <div id="qrBox" class="hidden stack">
+      <p>Scan this with your authenticator app (or type the key in by hand). It is shown only once.</p>
+      <img id="qr" class="qr" alt="Authenticator setup QR code">
+      <div id="secret" class="secret"></div>
+      <form id="confirmForm" class="stack">
+        <label>Code from the app <input type="text" name="code" inputmode="numeric" autocomplete="one-time-code" maxlength="6" required class="code-input"></label>
+        <p class="msg hidden"></p>
+        <button type="submit" class="btn primary">Confirm</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="unlock" class="card hidden">
+    <h2>Enter your authenticator code</h2>
+    <form id="unlockForm" class="stack">
+      <label>6-digit code <input type="text" name="code" inputmode="numeric" autocomplete="one-time-code" maxlength="6" required class="code-input"></label>
+      <p class="msg hidden"></p>
+      <button type="submit" class="btn primary">Unlock for 30 minutes</button>
+    </form>
+  </div>
+
+  <div id="dash" class="hidden">
+    <div id="tiles" class="tiles"></div>
+    <div class="grid">
+      <div class="card"><h3>Latest download per user</h3><div id="byVersion" class="tablewrap"></div></div>
+      <div class="card"><h3>Downloads per version</h3><div id="downloads" class="tablewrap"></div></div>
+    </div>
+    <div class="card">
+      <h3>Users (anonymous)</h3>
+      <p class="muted small">User numbers only. Passwords exist only as one-way hashes and emails are encrypted — neither is ever shown here.</p>
+      <div id="list" class="tablewrap"></div>
+      <form id="actForm" class="row mt">
+        <label>User number <input type="text" name="user" inputmode="numeric" required></label>
+        <label>Action <select class="btn"><option value="disable">Disable</option><option value="enable">Enable</option><option value="delete">Delete</option></select></label>
+        <button type="submit" class="btn">Apply</button>
+        <p class="msg hidden"></p>
+      </form>
+    </div>
+  </div>
+</main>
+
+<footer><div class="wrap">
+  <span>AnKar Video Editor · free &amp; open source (MIT)</span><span class="sp"></span>
+  <a href="/privacy">Privacy</a><a href="/terms">Terms</a><a href="/whatsnew">What's new</a><a href="#" data-github class="hidden">Source code</a>
+</div></footer>
+</body>
+</html>

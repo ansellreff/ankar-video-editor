@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your account · AnKar Video Editor</title>
+<meta name="description" content="Download AnKar Video Editor, see if you&#x27;re up to date, and manage your account.">
+<meta name="referrer" content="same-origin">
+<meta property="og:title" content="Your account · AnKar Video Editor">
+<meta property="og:description" content="Download AnKar Video Editor, see if you&#x27;re up to date, and manage your account.">
+<meta property="og:image" content="/img/editor.webp">
+<link rel="icon" href="/img/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/css/site.css">
+<script src="/js/site.js" defer></script>
+</head>
+<body data-page="account">
+<header class="nav"><div class="wrap">
+  <a class="brand" href="/"><span class="logo">&#9654;</span>AnKar Video Editor</a>
+  <nav>
+    <a href="/start">Get started</a>
+    <a href="/whatsnew">What's new</a>
+    <a href="#" data-github class="hidden">GitHub</a>
+    <a href="/signin" id="navAcct" class="btn small primary">Sign in</a>
+  </nav>
+</div></header>
+<div class="wrap"><div id="flash" class="msg hidden" role="status"></div></div>
+<main class="narrow doc">
+  <div class="acct-head">
+    <div id="avatar" class="avatar">?</div>
+    <div><h1 id="uname" class="mt0">Your account</h1><div id="joined" class="muted small"></div></div>
+    <span class="sp"></span>
+    <a id="adminLink" class="btn small hidden" href="/admin">Admin</a>
+    <button id="signout" class="btn small">Sign out</button>
+  </div>
+
+  <div class="card">
+    <h2>Download</h2>
+    <div class="version-box"><div id="versionInfo"></div></div>
+    <div id="update" class="update hidden">
+      <h3 id="upTitle">A new version is available</h3>
+      <div id="upNotes"></div>
+    </div>
+    <p class="row mt"><a id="dlBtn" class="btn primary big" href="/api/download">Download</a>
+      <a href="/start">Setup guide</a></p>
+    <p id="dlMsg" class="msg hidden"></p>
+    <p class="hint">Windows 10/11 zip. Updating: drag the new zip onto <code>Update AnKar Video Editor.bat</code> — your projects and keys are kept.</p>
+  </div>
+
+  <div class="card">
+    <h2>Password</h2>
+    <form id="pwForm" class="stack">
+      <label>Current password <input type="password" name="current" autocomplete="current-password" required></label>
+      <label>New password <input type="password" name="new" autocomplete="new-password" required></label>
+      <label>New password again <input type="password" name="new2" autocomplete="new-password" required></label>
+      <p class="msg hidden"></p>
+      <button type="submit" class="btn">Change password</button>
+    </form>
+  </div>
+
+  <div id="emailBox" class="card">
+    <h2>Email for password reset</h2>
+    <p id="emailState" class="muted"></p>
+    <form id="emailForm" class="stack">
+      <label>Email <input type="email" name="email" autocomplete="email" maxlength="254"></label>
+      <label>Your password <input type="password" name="password" autocomplete="current-password" required></label>
+      <p class="msg hidden"></p>
+      <div class="row"><button type="submit" class="btn">Save email</button><button type="button" id="emailRemove" class="btn danger">Remove email</button></div>
+      <p class="hint">Stored encrypted and used for one thing only: sending you a reset code when you ask for one.</p>
+    </form>
+  </div>
+
+  <div class="card">
+    <h2>Your data</h2>
+    <p class="muted">See exactly what this site stores about you.</p>
+    <button id="myData" class="btn">Show my data</button>
+    <div id="dataBox" class="hidden mt"><dl id="dataList" class="kv"></dl></div>
+  </div>
+
+  <div class="card">
+    <h2>Delete account</h2>
+    <p class="muted">Deletes your account and everything stored about it, right away. The editor on your PC keeps working.</p>
+    <form id="deleteForm" class="stack">
+      <label>Your password <input type="password" name="password" autocomplete="current-password" required></label>
+      <label class="check"><input type="checkbox" name="sure"> Yes, delete my account for good</label>
+      <p class="msg hidden"></p>
+      <button type="submit" class="btn danger">Delete my account</button>
+    </form>
+  </div>
+</main>
+
+<footer><div class="wrap">
+  <span>AnKar Video Editor · free &amp; open source (MIT)</span><span class="sp"></span>
+  <a href="/privacy">Privacy</a><a href="/terms">Terms</a><a href="/whatsnew">What's new</a><a href="#" data-github class="hidden">Source code</a>
+</div></footer>
+</body>
+</html>

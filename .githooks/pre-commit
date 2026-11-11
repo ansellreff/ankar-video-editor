@@ -1,0 +1,11 @@
+#!/bin/sh
+# AnKar Video Editor: stop a commit that would contain an API key or a private file. Enable once with:
+#   git config core.hooksPath .githooks
+PY="runtime/python.exe"
+[ -x "$PY" ] || PY=".venv/Scripts/python.exe"
+[ -x "$PY" ] || PY=".venv/bin/python"
+[ -x "$PY" ] || PY="python"
+"$PY" -m scripts.check_secrets --staged || {
+  echo "Commit stopped: an API key or a private file is in the staged files (see above)."
+  exit 1
+}

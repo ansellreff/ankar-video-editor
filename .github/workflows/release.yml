@@ -1,0 +1,40 @@
+# Builds the download zip and the GitHub Release when a version tag is pushed (made by: python -m scripts.release X.Y.Z).
+name: Release
+on:
+  push:
+    tags: ["v*.*.*"]
+permissions:
+  contents: write          # create the Release; nothing else
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Tag must match app/version.py and CHANGELOG.md
+        run: |
+          python3 - <<'EOF'
+          import os, sys
+          sys.path.insert(0, ".")
+          from app.version import VERSION
+          from app import releasenotes
+          tag = os.environ["GITHUB_REF_NAME"]
+          assert tag == "v" + VERSION, f"tag {tag} but app/version.py says {VERSION}"
+          rel = releasenotes.load()[0]
+          assert rel["version"] == VERSION and rel["notes"], "CHANGELOG.md must start with this version's notes"
+          open("notes.md", "w", encoding="utf-8").write(
+              "\n".join("- " + n for n in rel["notes"]) +
+              "\n\n**Download:** sign in on the AnKar website (it reminds you about updates), or use the zip below."
+              "\nUnzip → `Setup AnKar Video Editor.bat` → `Start AnKar Video Editor.bat`. Updating: drag the zip onto"
+              " `Update AnKar Video Editor.bat`.\n")
+          EOF
+      - name: Leak check (API keys / private files) on everything in the repo
+        run: python3 -m scripts.check_secrets
+      - name: Build the zip
+        run: python3 -m scripts.make_release_zip
+      - name: Publish the Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          V="${GITHUB_REF_NAME#v}"
+          gh release create "$GITHUB_REF_NAME" "dist/AnKar-Video-Editor-$V.zip" "dist/AnKar-Video-Editor-$V.zip.sha256" \
+            --title "AnKar Video Editor $V" --notes-file notes.md

@@ -1,0 +1,61 @@
+# AnKar Video Editor — what must NEVER go to GitHub. (scripts/check_secrets.py double-checks this before every commit.)
+
+# ---- SECRETS: the user's API keys + their encryption key + the key-page password hash + settings ----
+config/
+secrets.json
+keys.enc
+master.key
+auth.json
+.env
+.env.*
+*.env
+*.pem
+*.key
+
+# ---- environments, downloaded tools and models (big, machine-specific; Setup downloads them) ----
+.venv/
+.venv-tts/
+runtime/
+runtime-tts/
+tools/
+models/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# ---- generated files (rebuilt automatically) ----
+cache/
+*.log
+dist/
+
+# ---- your own projects stay on your PC; only the public Demo project is in the repo ----
+projects/*
+!projects/Demo/
+projects/Demo/*
+!projects/Demo/project.json
+!projects/Demo/README.txt
+
+# ---- your private library: voices, generated narration/SFX, reports, saved styles, user presets ----
+library/voices/
+library/generated/
+library/reports/
+library/styles/
+presets/
+# noise beds made with ElevenLabs Sound Effects (their licence depends on your plan) — only the CC0 / local ones are public
+library/ambience/*.mp3
+!library/ambience/room_tone.mp3
+!library/ambience/keyboard.mp3
+# raw downloaded sound packs (the extracted files + CREDITS.md are kept)
+library/sfx/**/pack.zip
+
+# ---- your private working notes and personal edit scripts (the generic build engine stays public) ----
+CLAUDE.md
+scripts/having_fun/*
+!scripts/having_fun/__init__.py
+!scripts/having_fun/api.py
+!scripts/having_fun/builder.py
+
+# ---- website (Vercel) local files ----
+website/.vercel/
+website/local.db
+website/.env*

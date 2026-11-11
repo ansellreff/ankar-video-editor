@@ -1,0 +1,62 @@
+{
+ "small_room": {
+  "name": "Small room",
+  "rt60": 0.35,
+  "file": "library/ir/small_room.wav",
+  "gain": 0.047757
+ },
+ "living_room": {
+  "name": "Living room",
+  "rt60": 0.55,
+  "file": "library/ir/living_room.wav",
+  "gain": 0.035956
+ },
+ "car": {
+  "name": "Car",
+  "rt60": 0.14,
+  "file": "library/ir/car.wav",
+  "gain": 0.121381
+ },
+ "cafe": {
+  "name": "Café",
+  "rt60": 0.85,
+  "file": "library/ir/cafe.wav",
+  "gain": 0.030438
+ },
+ "classroom": {
+  "name": "Classroom",
+  "rt60": 1.05,
+  "file": "library/ir/classroom.wav",
+  "gain": 0.031208
+ },
+ "stairwell": {
+  "name": "Stairwell",
+  "rt60": 2.1,
+  "file": "library/ir/stairwell.wav",
+  "gain": 0.023143
+ },
+ "hall": {
+  "name": "Concert hall",
+  "rt60": 2.4,
+  "file": "library/ir/hall.wav",
+  "gain": 0.021259
+ },
+ "church": {
+  "name": "Church",
+  "rt60": 4.0,
+  "file": "library/ir/church.wav",
+  "gain": 0.020726
+ },
+ "forest": {
+  "name": "Forest",
+  "rt60": 0.7,
+  "file": "library/ir/forest.wav",
+  "gain": 0.050721
+ },
+ "stadium": {
+  "name": "Stadium",
+  "rt60": 2.8,
+  "file": "library/ir/stadium.wav",
+  "gain": 0.022974
+ }
+}

@@ -1,0 +1,64 @@
+<!-- Get started | Download, set up and start AnKar Video Editor on Windows — everything stays inside one folder. -->
+<main class="narrow doc">
+  <h1>Get started</h1>
+  <p class="muted">About 15 minutes the first time (mostly downloading). Nothing is installed on Windows — no admin rights, no registry, no PATH changes.</p>
+
+  <ol class="big">
+    <li><h3>Download</h3>
+      <p><a href="/signup?next=download" data-download>Sign in and download the zip</a> (about 22 MB). A free account only needs a username.</p></li>
+    <li><h3>Unzip it somewhere short</h3>
+      <p>Right-click the zip ▸ <b>Extract All…</b> and choose a folder such as <code>Documents\AnKar Video Editor</code> or <code>C:\AnKar</code>.</p>
+      <p class="muted small">Keep the folder path under 90 characters (Windows limits file paths), and avoid OneDrive-synced folders for big video projects.</p></li>
+    <li><h3>Run Setup once</h3>
+      <p>Double-click <code>Setup AnKar Video Editor.bat</code>. It downloads, into that folder only, and checks every file against its SHA-256 checksum:</p>
+      <ul>
+        <li>the official portable Python 3.12 from python.org → <code>runtime\</code></li>
+        <li>the exact Python packages the editor needs → <code>runtime\Lib\site-packages</code></li>
+        <li>the Whisper subtitle model (539 MB) from Hugging Face → <code>models\</code></li>
+      </ul>
+      <p>Then it runs a self-test and says <b>Ready!</b></p>
+      <p class="muted small">If Windows SmartScreen asks about the .bat file, choose <b>More info ▸ Run anyway</b> — it's a plain text script you can open in Notepad to read.</p></li>
+    <li><h3>Start editing</h3>
+      <p>Double-click <code>Start AnKar Video Editor.bat</code>. Your browser opens <code>http://localhost:8765</code> with a 1-minute <b>Demo</b> project. Keep the black window open while you edit; close it to stop.</p></li>
+    <li><h3>Optional: add your AI keys</h3>
+      <p>Menu bar ▸ <b>API Keys</b>: create your password (stored on your PC as a one-way hash), then add a key. The editor works without any key.</p>
+      <div class="tablewrap"><table>
+        <tr><th>Key</th><th>Used for</th><th>Get it</th></tr>
+        <tr><td>Claude (Anthropic)</td><td>AI Editor chat</td><td><a href="https://console.anthropic.com" rel="noopener noreferrer">console.anthropic.com</a></td></tr>
+        <tr><td>ElevenLabs</td><td>AI voice, voice cloning</td><td><a href="https://elevenlabs.io/app/settings/api-keys" rel="noopener noreferrer">elevenlabs.io</a></td></tr>
+      </table></div></li>
+  </ol>
+
+  <h2>Updating</h2>
+  <p>When a new version is out, the editor shows a red dot on <b>Help</b> and this site shows it on your account page.</p>
+  <ol>
+    <li>Download the new zip from your <a href="/account">account page</a>.</li>
+    <li>Drag the zip onto <code>Update AnKar Video Editor.bat</code> in your AnKar folder (or just double-click it — it finds the newest zip in Downloads).</li>
+    <li>It replaces the program files and runs Setup. Your projects, voices, keys and settings are kept.</li>
+  </ol>
+
+  <h2>What you need</h2>
+  <ul>
+    <li>Windows 10 (version 1803 or newer) or Windows 11, 64-bit</li>
+    <li>8 GB RAM (16 GB recommended for long 4K projects)</li>
+    <li>A graphics chip with OpenGL 3.3 — almost every PC from the last 10 years</li>
+    <li>Microsoft Edge or Google Chrome</li>
+    <li>About 3 GB free disk space, plus room for your footage and exports</li>
+    <li>Internet for Setup, the AI features and the daily update check</li>
+  </ul>
+
+  <h2>Optional: offline AI voice</h2>
+  <p><code>Install local AI voice (optional).bat</code> adds the Chatterbox voice engine (about 4 GB, runs on the CPU) so narration works without ElevenLabs.</p>
+
+  <h2>Uninstall</h2>
+  <p>Delete the AnKar folder. Nothing is left anywhere else on your PC. (Copy your <code>projects</code> folder first if you want to keep your edits.)</p>
+
+  <h2>Troubleshooting</h2>
+  <div class="faq">
+    <details><summary>"This folder's location is too long for Windows"</summary><p>Move the whole folder somewhere shorter, e.g. <code>C:\AnKar</code>, and run Setup again. It continues where it stopped.</p></details>
+    <details><summary>A download failed or "checksum mismatch"</summary><p>Check your internet connection and run Setup again. A file that doesn't match its checksum is never used.</p></details>
+    <details><summary>"localhost refused to connect"</summary><p>The black AnKar window must stay open. Start it again with <code>Start AnKar Video Editor.bat</code>.</p></details>
+    <details><summary>The self-test says graphics / OpenGL 3.3 is missing</summary><p>Update your graphics driver (Windows Update ▸ Advanced options ▸ Optional updates, or your PC maker's website).</p></details>
+    <details><summary>Windows Smart App Control blocked something</summary><p>AnKar only uses signed, official files (python.org Python, PyPI packages). If one is still blocked, tell us on GitHub — please don't turn Smart App Control off.</p></details>
+  </div>
+</main>

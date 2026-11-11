@@ -1,0 +1,43 @@
+<!-- Privacy | What AnKar Video Editor and its website store — and everything they don't. -->
+<main class="narrow doc">
+  <h1>Privacy</h1>
+  <p class="muted">Short version: your videos, projects and API keys stay on your PC. This website keeps only what it needs to remind you about updates.</p>
+
+  <h2>What this website stores</h2>
+  <div class="tablewrap"><table>
+    <tr><th>What</th><th>Why</th><th>How</th></tr>
+    <tr><td>Username</td><td>To sign you in</td><td>As you typed it</td></tr>
+    <tr><td>Password</td><td>To sign you in</td><td>Only a salted one-way scrypt hash — nobody, including the site owner, can read your password</td></tr>
+    <tr><td>Email (only if you add one)</td><td>Only to send a reset code when you ask for one</td><td>Encrypted (AES-256-GCM); never shown to anyone, never used for anything else, never shared</td></tr>
+    <tr><td>Latest downloaded version + date</td><td>To tell you when a newer version exists</td><td>Updated each time you download</td></tr>
+    <tr><td>Sign-in session</td><td>To keep you signed in (30 days)</td><td>One cookie; the site stores only a hash of it</td></tr>
+    <tr><td>Sign-in failure counter</td><td>To lock an account for 15 minutes after 5 wrong passwords</td><td>A number, reset after a good sign-in</td></tr>
+  </table></div>
+
+  <h2>What it never stores</h2>
+  <ul>
+    <li>Your footage, projects, exports, voices or API keys</li>
+    <li>IP addresses, device or browser fingerprints, location</li>
+    <li>Analytics, tracking pixels, advertising cookies — there are none</li>
+  </ul>
+
+  <h2>What the site owner can see</h2>
+  <p>Anonymous counts: how many accounts exist, how many are new, and which version people last downloaded — by user number only. Never your password (only a hash exists) and never your email.</p>
+
+  <h2>The editor on your PC</h2>
+  <ul>
+    <li>It runs at <code>http://localhost:8765</code> — only your own browser can open it.</li>
+    <li>It talks to the internet only for: Setup downloads; your own AI requests to Anthropic / ElevenLabs with your keys (their privacy terms apply to what you send them); reference links you paste into the AI Editor; and one anonymous update check a day (it sends nothing about you; turn it off with <code>ANKAR_UPDATE_CHECK=0</code>).</li>
+    <li>API keys are encrypted on your PC, protected by Windows and by your own password.</li>
+  </ul>
+
+  <h2>Your choices</h2>
+  <ul>
+    <li><b>See your data:</b> Account ▸ Show my data.</li>
+    <li><b>Remove your email:</b> Account ▸ Remove email.</li>
+    <li><b>Delete everything:</b> Account ▸ Delete account — your row is erased immediately.</li>
+  </ul>
+
+  <h2>Where it's hosted</h2>
+  <p>The website runs on Vercel; its small database is Neon Postgres. Downloads come from GitHub Releases. Those providers process web requests to deliver the site.</p>
+</main>

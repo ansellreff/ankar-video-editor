@@ -1,0 +1,52 @@
+{
+ "room_tone": {
+  "name": "Room tone",
+  "file": "library/ambience/room_tone.mp3",
+  "source": "generated locally"
+ },
+ "keyboard": {
+  "name": "Keyboard typing",
+  "file": "library/ambience/keyboard.mp3",
+  "source": "Keyboard Soundpack #1 by Unicae Games (CC0)"
+ },
+ "cafe": {
+  "name": "Café",
+  "file": "library/ambience/cafe.mp3",
+  "source": "ElevenLabs Sound Effects (generated for this project)"
+ },
+ "city_street": {
+  "name": "City street",
+  "file": "library/ambience/city_street.mp3",
+  "source": "ElevenLabs Sound Effects (generated for this project)"
+ },
+ "night_market": {
+  "name": "Night market",
+  "file": "library/ambience/night_market.mp3",
+  "source": "ElevenLabs Sound Effects (generated for this project)"
+ },
+ "theme_park": {
+  "name": "Theme park",
+  "file": "library/ambience/theme_park.mp3",
+  "source": "ElevenLabs Sound Effects (generated for this project)"
+ },
+ "rain": {
+  "name": "Light rain",
+  "file": "library/ambience/rain.mp3",
+  "source": "ElevenLabs Sound Effects (generated for this project)"
+ },
+ "park_birds": {
+  "name": "Park & birds",
+  "file": "library/ambience/park_birds.mp3",
+  "source": "ElevenLabs Sound Effects (generated for this project)"
+ },
+ "wind": {
+  "name": "Wind outdoors",
+  "file": "library/ambience/wind.mp3",
+  "source": "ElevenLabs Sound Effects (generated for this project)"
+ },
+ "station": {
+  "name": "Train station",
+  "file": "library/ambience/station.mp3",
+  "source": "ElevenLabs Sound Effects (generated for this project)"
+ }
+}

@@ -1,0 +1,53 @@
+<!-- Admin | Anonymous usage counts for the AnKar Video Editor website. -->
+<main class="wrap doc">
+  <h1>Admin</h1>
+  <p id="notAdmin" class="msg err hidden">This page is only for the site owner.</p>
+
+  <div id="setup" class="card hidden">
+    <h2>Set up your authenticator</h2>
+    <p class="muted">The admin page needs a 6-digit code from an authenticator app (Google Authenticator, Microsoft Authenticator, 1Password…) every time.</p>
+    <form id="setupForm" class="stack">
+      <label>Your password <input type="password" name="password" autocomplete="current-password" required></label>
+      <p class="msg hidden"></p>
+      <button type="submit" class="btn primary">Show the setup code</button>
+    </form>
+    <div id="qrBox" class="hidden stack">
+      <p>Scan this with your authenticator app (or type the key in by hand). It is shown only once.</p>
+      <img id="qr" class="qr" alt="Authenticator setup QR code">
+      <div id="secret" class="secret"></div>
+      <form id="confirmForm" class="stack">
+        <label>Code from the app <input type="text" name="code" inputmode="numeric" autocomplete="one-time-code" maxlength="6" required class="code-input"></label>
+        <p class="msg hidden"></p>
+        <button type="submit" class="btn primary">Confirm</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="unlock" class="card hidden">
+    <h2>Enter your authenticator code</h2>
+    <form id="unlockForm" class="stack">
+      <label>6-digit code <input type="text" name="code" inputmode="numeric" autocomplete="one-time-code" maxlength="6" required class="code-input"></label>
+      <p class="msg hidden"></p>
+      <button type="submit" class="btn primary">Unlock for 30 minutes</button>
+    </form>
+  </div>
+
+  <div id="dash" class="hidden">
+    <div id="tiles" class="tiles"></div>
+    <div class="grid">
+      <div class="card"><h3>Latest download per user</h3><div id="byVersion" class="tablewrap"></div></div>
+      <div class="card"><h3>Downloads per version</h3><div id="downloads" class="tablewrap"></div></div>
+    </div>
+    <div class="card">
+      <h3>Users (anonymous)</h3>
+      <p class="muted small">User numbers only. Passwords exist only as one-way hashes and emails are encrypted — neither is ever shown here.</p>
+      <div id="list" class="tablewrap"></div>
+      <form id="actForm" class="row mt">
+        <label>User number <input type="text" name="user" inputmode="numeric" required></label>
+        <label>Action <select class="btn"><option value="disable">Disable</option><option value="enable">Enable</option><option value="delete">Delete</option></select></label>
+        <button type="submit" class="btn">Apply</button>
+        <p class="msg hidden"></p>
+      </form>
+    </div>
+  </div>
+</main>

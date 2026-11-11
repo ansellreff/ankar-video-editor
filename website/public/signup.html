@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Create your account · AnKar Video Editor</title>
+<meta name="description" content="A free account (just a username and password) to download AnKar Video Editor and get update reminders.">
+<meta name="referrer" content="same-origin">
+<meta property="og:title" content="Create your account · AnKar Video Editor">
+<meta property="og:description" content="A free account (just a username and password) to download AnKar Video Editor and get update reminders.">
+<meta property="og:image" content="/img/editor.webp">
+<link rel="icon" href="/img/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/css/site.css">
+<script src="/js/site.js" defer></script>
+</head>
+<body data-page="signup">
+<header class="nav"><div class="wrap">
+  <a class="brand" href="/"><span class="logo">&#9654;</span>AnKar Video Editor</a>
+  <nav>
+    <a href="/start">Get started</a>
+    <a href="/whatsnew">What's new</a>
+    <a href="#" data-github class="hidden">GitHub</a>
+    <a href="/signin" id="navAcct" class="btn small primary">Sign in</a>
+  </nav>
+</div></header>
+<div class="wrap"><div id="flash" class="msg hidden" role="status"></div></div>
+<main class="auth">
+  <div class="card">
+    <h1>Create your account</h1>
+    <p class="muted small">Free. We only keep your username, a one-way hash of your password, and which version you download — so we can remind you about updates.</p>
+    <form id="signupForm" class="stack" autocomplete="on">
+      <label>Username
+        <input type="text" name="username" autocomplete="username" required minlength="3" maxlength="24" autocapitalize="none" spellcheck="false">
+        <span class="hint">3–24 letters, numbers, dots, dashes or underscores. Others never see it.</span></label>
+      <label>Password
+        <input type="password" name="password" autocomplete="new-password" required>
+        <span class="hint">At least <span class="minpw">10</span> characters. A short sentence works well.</span></label>
+      <label>Password again
+        <input type="password" name="password2" autocomplete="new-password" required></label>
+      <label id="emailRow">Email <span class="hint">(optional — only used to reset a forgotten password)</span>
+        <input type="email" name="email" autocomplete="email" maxlength="254"></label>
+      <p id="noEmailWarn" class="msg info hidden">Without an email, a forgotten password can't be recovered — you'd make a new account. You can add one later.</p>
+      <p id="noEmailYet" class="msg info hidden">Password reset by email isn't switched on yet, so keep your password somewhere safe.</p>
+      <p class="msg hidden"></p>
+      <button type="submit" class="btn primary">Create account</button>
+      <p class="hint">By creating an account you agree to the <a href="/terms">terms</a> and the <a href="/privacy">privacy page</a>.</p>
+    </form>
+  </div>
+  <div class="alt"><span>Already have an account? <a href="/signin">Sign in</a></span></div>
+</main>
+
+<footer><div class="wrap">
+  <span>AnKar Video Editor · free &amp; open source (MIT)</span><span class="sp"></span>
+  <a href="/privacy">Privacy</a><a href="/terms">Terms</a><a href="/whatsnew">What's new</a><a href="#" data-github class="hidden">Source code</a>
+</div></footer>
+</body>
+</html>

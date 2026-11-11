@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sign in · AnKar Video Editor</title>
+<meta name="description" content="Sign in to download AnKar Video Editor and see if your version is up to date.">
+<meta name="referrer" content="same-origin">
+<meta property="og:title" content="Sign in · AnKar Video Editor">
+<meta property="og:description" content="Sign in to download AnKar Video Editor and see if your version is up to date.">
+<meta property="og:image" content="/img/editor.webp">
+<link rel="icon" href="/img/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/css/site.css">
+<script src="/js/site.js" defer></script>
+</head>
+<body data-page="signin">
+<header class="nav"><div class="wrap">
+  <a class="brand" href="/"><span class="logo">&#9654;</span>AnKar Video Editor</a>
+  <nav>
+    <a href="/start">Get started</a>
+    <a href="/whatsnew">What's new</a>
+    <a href="#" data-github class="hidden">GitHub</a>
+    <a href="/signin" id="navAcct" class="btn small primary">Sign in</a>
+  </nav>
+</div></header>
+<div class="wrap"><div id="flash" class="msg hidden" role="status"></div></div>
+<main class="auth">
+  <p id="why" class="msg hidden"></p>
+  <div class="card">
+    <h1>Sign in</h1>
+    <form id="signinForm" class="stack" autocomplete="on">
+      <label>Username
+        <input type="text" name="username" autocomplete="username" required autocapitalize="none" spellcheck="false"></label>
+      <label>Password
+        <input type="password" name="password" autocomplete="current-password" required></label>
+      <p class="msg hidden"></p>
+      <button type="submit" class="btn primary">Sign in</button>
+    </form>
+  </div>
+  <div class="alt"><a href="/forgot">Forgot your password?</a><span>New here? <a href="/signup">Create an account</a></span></div>
+</main>
+
+<footer><div class="wrap">
+  <span>AnKar Video Editor · free &amp; open source (MIT)</span><span class="sp"></span>
+  <a href="/privacy">Privacy</a><a href="/terms">Terms</a><a href="/whatsnew">What's new</a><a href="#" data-github class="hidden">Source code</a>
+</div></footer>
+</body>
+</html>

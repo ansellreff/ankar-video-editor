@@ -1,0 +1,2405 @@
+{
+ "version": 1,
+ "name": "Demo",
+ "format": {
+  "preset": "9:16",
+  "w": 1080,
+  "h": 1920,
+  "fps": "30/1"
+ },
+ "tracks": [
+  {
+   "id": "T2",
+   "kind": "text",
+   "name": "Text 2",
+   "mute": false,
+   "solo": false,
+   "lock": false,
+   "hidden": false,
+   "volume_db": 0.0,
+   "duck": false,
+   "role": null,
+   "height": "m"
+  },
+  {
+   "id": "T1",
+   "kind": "text",
+   "name": "Text 1",
+   "mute": false,
+   "solo": false,
+   "lock": false,
+   "hidden": false,
+   "volume_db": 0.0,
+   "duck": false,
+   "role": null,
+   "height": "m"
+  },
+  {
+   "id": "V3",
+   "kind": "video",
+   "name": "Video 3",
+   "mute": false,
+   "solo": false,
+   "lock": false,
+   "hidden": false,
+   "volume_db": 0.0,
+   "duck": false,
+   "role": null,
+   "height": "m"
+  },
+  {
+   "id": "V2",
+   "kind": "video",
+   "name": "Video 2",
+   "mute": false,
+   "solo": false,
+   "lock": false,
+   "hidden": false,
+   "volume_db": 0.0,
+   "duck": false,
+   "role": null,
+   "height": "m"
+  },
+  {
+   "id": "V1",
+   "kind": "video",
+   "name": "Video 1",
+   "mute": false,
+   "solo": false,
+   "lock": false,
+   "hidden": false,
+   "volume_db": 0.0,
+   "duck": false,
+   "role": null,
+   "height": "m"
+  },
+  {
+   "id": "A1",
+   "kind": "audio",
+   "name": "Dialogue",
+   "mute": false,
+   "solo": false,
+   "lock": false,
+   "hidden": false,
+   "volume_db": -14,
+   "duck": false,
+   "role": "dialogue",
+   "height": "m"
+  },
+  {
+   "id": "A2",
+   "kind": "audio",
+   "name": "Music",
+   "mute": false,
+   "solo": false,
+   "lock": false,
+   "hidden": false,
+   "volume_db": 0.0,
+   "duck": true,
+   "role": null,
+   "height": "m"
+  },
+  {
+   "id": "A3",
+   "kind": "audio",
+   "name": "SFX",
+   "mute": false,
+   "solo": false,
+   "lock": false,
+   "hidden": false,
+   "volume_db": 0.0,
+   "duck": false,
+   "role": null,
+   "height": "m"
+  },
+  {
+   "id": "A4",
+   "kind": "audio",
+   "name": "Narration",
+   "mute": false,
+   "solo": false,
+   "lock": false,
+   "hidden": false,
+   "volume_db": 0.0,
+   "duck": false,
+   "role": "narration",
+   "height": "m"
+  }
+ ],
+ "assets": {
+  "eaf289c869": {
+   "path": "library/samples/sample_A_street_night.mp4",
+   "kind": "video",
+   "dur": 6.006,
+   "has_audio": true,
+   "has_video": true,
+   "w": 1440,
+   "h": 2560,
+   "fps": 29.97002997002997
+  },
+  "2944a81b54": {
+   "path": "library/samples/sample_B_bikes_morning.mp4",
+   "kind": "video",
+   "dur": 6.006,
+   "has_audio": true,
+   "has_video": true,
+   "w": 1440,
+   "h": 2560,
+   "fps": 29.97002997002997
+  },
+  "5e71275887": {
+   "path": "library/samples/sample_C_theme_park.mp4",
+   "kind": "video",
+   "dur": 5.005,
+   "has_audio": true,
+   "has_video": true,
+   "w": 1440,
+   "h": 2560,
+   "fps": 29.97002997002997
+  }
+ },
+ "clips": [
+  {
+   "id": "c5",
+   "type": "text",
+   "track": "T2",
+   "start": 0.133333,
+   "dur": 5.706,
+   "text": {
+    "content": "1  Look: Night Boost + dissolve in",
+    "preset": "caption",
+    "x": 0.06,
+    "y": 0.075,
+    "times": null,
+    "style": {
+     "font": "Poppins",
+     "weight": 600,
+     "size": 44,
+     "color": "#FFFFFF",
+     "outline": 0,
+     "outline_color": "#000000",
+     "shadow": 0,
+     "box": true,
+     "box_color": "#000000A6",
+     "align": "left",
+     "spacing": 0,
+     "line_height": 1.2
+    },
+    "anim": {
+     "in": "fade",
+     "in_dur": 0.25,
+     "out": "fade",
+     "out_dur": 0.25
+    }
+   },
+   "speed": 1.0,
+   "enabled": true,
+   "link": null,
+   "motion": {
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 1.0,
+    "rot": 0.0,
+    "opacity": 1.0,
+    "fit": "fit"
+   },
+   "crop": {
+    "l": 0.0,
+    "t": 0.0,
+    "r": 0.0,
+    "b": 0.0
+   },
+   "color": {},
+   "filters": [],
+   "volume_db": 0.0,
+   "fade_in": 0.0,
+   "fade_out": 0.0,
+   "keys": {}
+  },
+  {
+   "id": "c11",
+   "type": "text",
+   "track": "T2",
+   "start": 6.166667,
+   "dur": 2.7,
+   "text": {
+    "content": "2  Inward wipe + Warm look",
+    "preset": "caption",
+    "x": 0.06,
+    "y": 0.075,
+    "times": null,
+    "style": {
+     "font": "Poppins",
+     "weight": 600,
+     "size": 44,
+     "color": "#FFFFFF",
+     "outline": 0,
+     "outline_color": "#000000",
+     "shadow": 0,
+     "box": true,
+     "box_color": "#000000A6",
+     "align": "left",
+     "spacing": 0,
+     "line_height": 1.2
+    },
+    "anim": {
+     "in": "fade",
+     "in_dur": 0.25,
+     "out": "fade",
+     "out_dur": 0.25
+    }
+   },
+   "speed": 1.0,
+   "enabled": true,
+   "link": null,
+   "motion": {
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 1.0,
+    "rot": 0.0,
+    "opacity": 1.0,
+    "fit": "fit"
+   },
+   "crop": {
+    "l": 0.0,
+    "t": 0.0,
+    "r": 0.0,
+    "b": 0.0
+   },
+   "color": {},
+   "filters": [],
+   "volume_db": 0.0,
+   "fade_in": 0.0,
+   "fade_out": 0.0,
+   "keys": {}
+  },
+  {
+   "id": "c18",
+   "type": "text",
+   "track": "T2",
+   "start": 9.166667,
+   "dur": 1.7019999999999988,
+   "text": {
+    "content": "3  Freeze frame (2 s hold)",
+    "preset": "caption",
+    "x": 0.06,
+    "y": 0.075,
+    "times": null,
+    "style": {
+     "font": "Poppins",
+     "weight": 600,
+     "size": 44,
+     "color": "#FFFFFF",
+     "outline": 0,
+     "outline_color": "#000000",
+     "shadow": 0,
+     "box": true,
+     "box_color": "#000000A6",
+     "align": "left",
+     "spacing": 0,
+     "line_height": 1.2
+    },
+    "anim": {
+     "in": "fade",
+     "in_dur": 0.25,
+     "out": "fade",
+     "out_dur": 0.25
+    }
+   },
+   "speed": 1.0,
+   "enabled": true,
+   "link": null,
+   "motion": {
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 1.0,
+    "rot": 0.0,
+    "opacity": 1.0,
+    "fit": "fit"
+   },
+   "crop": {
+    "l": 0.0,
+    "t": 0.0,
+    "r": 0.0,
+    "b": 0.0
+   },
+   "color": {},
+   "filters": [],
+   "volume_db": 0.0,
+   "fade_in": 0.0,
+   "fade_out": 0.0,
+   "keys": {}
+  },
+  {
+   "id": "c20",
+   "type": "text",
+   "track": "T2",
+   "start": 11.166667,
+   "dur": 2.7030000000000003,
+   "text": {
+    "content": "   …clip continues after the hold",
+    "preset": "caption",
+    "x": 0.06,
+    "y": 0.075,
+    "times": null,
+    "style": {
+     "font": "Poppins",
+     "weight": 600,
+     "size": 44,
+     "color": "#FFFFFF",
+     "outline": 0,
+     "outline_color": "#000000",
+     "shadow": 0,
+     "box": true,
+     "box_color": "#000000A6",
+     "align": "left",
+     "spacing": 0,
+     "line_height": 1.2
+    },
+    "anim": {
+     "in": "fade",
+     "in_dur": 0.25,
+     "out": "fade",
+     "out_dur": 0.25
+    }
+   },
+   "speed": 1.0,
+   "enabled": true,
+   "link": null,
+   "motion": {
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 1.0,
+    "rot": 0.0,
+    "opacity": 1.0,
+    "fit": "fit"
+   },
+   "crop": {
+    "l": 0.0,
+    "t": 0.0,
+    "r": 0.0,
+    "b": 0.0
+   },
+   "color": {},
+   "filters": [],
+   "volume_db": 0.0,
+   "fade_in": 0.0,
+   "fade_out": 0.0,
+   "keys": {}
+  },
+  {
+   "id": "c26",
+   "type": "text",
+   "track": "T2",
+   "start": 14.166667,
+   "dur": 4.704999999999999,
+   "text": {
+    "content": "4  Keyframes: Ken Burns zoom + push",
+    "preset": "caption",
+    "x": 0.06,
+    "y": 0.075,
+    "times": null,
+    "style": {
+     "font": "Poppins",
+     "weight": 600,
+     "size": 44,
+     "color": "#FFFFFF",
+     "outline": 0,
+     "outline_color": "#000000",
+     "shadow": 0,
+     "box": true,
+     "box_color": "#000000A6",
+     "align": "left",
+     "spacing": 0,
+     "line_height": 1.2
+    },
+    "anim": {
+     "in": "fade",
+     "in_dur": 0.25,
+     "out": "fade",
+     "out_dur": 0.25
+    }
+   },
+   "speed": 1.0,
+   "enabled": true,
+   "link": null,
+   "motion": {
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 1.0,
+    "rot": 0.0,
+    "opacity": 1.0,
+    "fit": "fit"
+   },
+   "crop": {
+    "l": 0.0,
+    "t": 0.0,
+    "r": 0.0,
+    "b": 0.0
+   },
+   "color": {},
+   "filters": [],
+   "volume_db": 0.0,
+   "fade_in": 0.0,
+   "fade_out": 0.0,
+   "keys": {}
+  },
+  {
+   "id": "c32",
+   "type": "text",
+   "track": "T2",
+   "start": 19.166667,
+   "dur": 5.706,
+   "text": {
+    "content": "5  Split screen (V1 left, V2 right)",
+    "preset": "caption",
+    "x": 0.06,
+    "y": 0.075,
+    "times": null,
+    "style": {
+     "font": "Poppins",
+     "weight": 600,
+     "size": 44,
+     "color": "#FFFFFF",
+     "outline": 0,
+     "outline_color": "#000000",
+     "shadow": 0,
+     "box": true,
+     "box_color": "#000000A6",
+     "align": "left",
+     "spacing": 0,
+     "line_height": 1.2
+    },
+    "anim": {
+     "in": "fade",
+     "in_dur": 0.25,
+     "out": "fade",
+     "out_dur": 0.25
+    }
+   },
+   "speed": 1.0,
+   "enabled": true,
+   "link": null,
+   "motion": {
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 1.0,
+    "rot": 0.0,
+    "opacity": 1.0,
+    "fit": "fit"
+   },
+   "crop": {
+    "l": 0.0,
+    "t": 0.0,
+    "r": 0.0,
+    "b": 0.0
+   },
+   "color": {},
+   "filters": [],
+   "volume_db": 0.0,
+   "fade_in": 0.0,
+   "fade_out": 0.0,
+   "keys": {}
+  },
+  {
+   "id": "c37",
+   "type": "text",
+   "track": "T2",
+   "start": 25.166667,
+   "dur": 5.706,
+   "text": {
+    "content": "6  Slow motion 50%",
+    "preset": "caption",
+    "x": 0.06,
+    "y": 0.075,
+    "times": null,
+    "style": {
+     "font": "Poppins",
+     "weight": 600,
+     "size": 44,
+     "color": "#FFFFFF",
+     "outline": 0,
+     "outline_color": "#000000",
+     "shadow": 0,
+     "box": true,
+     "box_color": "#000000A6",
+     "align": "left",
+     "spacing": 0,
+     "line_height": 1.2
+    },
+    "anim": {
+     "in": "fade",
+     "in_dur": 0.25,
+     "out": "fade",
+     "out_dur": 0.25
+    }
+   },
+   "speed": 1.0,
+   "enabled": true,
+   "link": null,
+   "motion": {
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 1.0,
+    "rot": 0.0,
+    "opacity": 1.0,
+    "fit": "fit"
+   },
+   "crop": {
+    "l": 0.0,
+    "t": 0.0,
+    "r": 0.0,
+    "b": 0.0
+   },
+   "color": {},
+   "filters": [],
+   "volume_db": 0.0,
+   "fade_in": 0.0,
+   "fade_out": 0.0,
+   "keys": {}
+  },
+  {
+   "id": "c42",
+   "type": "text",
+   "track": "T2",
+   "start": 31.166667,
+   "dur": 3.703999999999998,
+   "text": {
+    "content": "7  Reverse (timecode counts down)",
+    "preset": "caption",
+    "x": 0.06,
+    "y": 0.075,
+    "times": null,
+    "style": {
+     "font": "Poppins",
+     "weight": 600,
+     "size": 44,
+     "color": "#FFFFFF",
+     "outline": 0,
+     "outline_color": "#000000",
+     "shadow": 0,
+     "box": true,
+     "box_color": "#000000A6",
+     "align": "left",
+     "spacing": 0,
+     "line_height": 1.2
+    },
+    "anim": {
+     "in": "fade",
+     "in_dur": 0.25,
+     "out": "fade",
+     "out_dur": 0.25
+    }
+   },
+   "speed": 1.0,
+   "enabled": true,
+   "link": null,
+   "motion": {
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 1.0,
+    "rot": 0.0,
+    "opacity": 1.0,
+    "fit": "fit"
+   },
+   "crop": {
+    "l": 0.0,
+    "t": 0.0,
+    "r": 0.0,
+    "b": 0.0
+   },
+   "color": {},
+   "filters": [],
+   "volume_db": 0.0,
+   "fade_in": 0.0,
+   "fade_out": 0.0,
+   "keys": {}
+  },
+  {
+   "id": "c48",
+   "type": "text",
+   "track": "T2",
+   "start": 35.2,
+   "dur": 4.705000000000003,
+   "text": {
+    "content": "8  Picture-in-picture (pop in)",
+    "preset": "caption",
+    "x": 0.06,
+    "y": 0.075,
+    "times": null,
+    "style": {
+     "font": "Poppins",
+     "weight": 600,
+     "size": 44,
+     "color": "#FFFFFF",
+     "outline": 0,
+     "outline_color": "#000000",
+     "shadow": 0,
+     "box": true,
+     "box_color": "#000000A6",
+     "align": "left",
+     "spacing": 0,
+     "line_height": 1.2
+    },
+    "anim": {
+     "in": "fade",
+     "in_dur": 0.25,
+     "out": "fade",
+     "out_dur": 0.25
+    }
+   },
+   "speed": 1.0,
+   "enabled": true,
+   "link": null,
+   "motion": {
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 1.0,
+    "rot": 0.0,
+    "opacity": 1.0,
+    "fit": "fit"
+   },
+   "crop": {
+    "l": 0.0,
+    "t": 0.0,
+    "r": 0.0,
+    "b": 0.0
+   },
+   "color": {},
+   "filters": [],
+   "volume_db": 0.0,
+   "fade_in": 0.0,
+   "fade_out": 0.0,
+   "keys": {}
+  },
+  {
+   "id": "c55",
+   "type": "text",
+   "track": "T2",
+   "start": 40.2,
+   "dur": 3.703999999999998,
+   "text": {
+    "content": "9 Look preset: Cinematic Teal (LUT)",
+    "preset": "caption",
+    "x": 0.06,
+    "y": 0.075,
+    "times": null,
+    "style": {
+     "font": "Poppins",
+     "weight": 600,
+     "size": 44,
+     "color": "#FFFFFF",
+     "outline": 0,
+     "outline_color": "#000000",
+     "shadow": 0,
+     "box": true,
+     "box_color": "#000000A6",
+     "align": "left",
+     "spacing": 0,
+     "line_height": 1.2
+    },
+    "anim": {
+     "in": "fade",
+     "in_dur": 0.25,
+     "out": "fade",
+     "out_dur": 0.25
+    }
+   },
+   "speed": 1.0,
+   "enabled": true,
+   "link": null,
+   "motion": {
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 1.0,
+    "rot": 0.0,
+    "opacity": 1.0,
+    "fit": "fit"
+   },
+   "crop": {
+    "l": 0.0,
+    "t": 0.0,
+    "r": 0.0,
+    "b": 0.0
+   },
+   "color": {},
+   "filters": [],
+   "volume_db": 0.0,
+   "fade_in": 0.0,
+   "fade_out": 0.0,
+   "keys": {}
+  },
+  {
+   "id": "c62",
+   "type": "text",
+   "track": "T2",
+   "start": 44.2,
+   "dur": 4.705000000000003,
+   "text": {
+    "content": "10 Captions: Karaoke Line",
+    "preset": "caption",
+    "x": 0.06,
+    "y": 0.075,
+    "times": null,
+    "style": {
+     "font": "Poppins",
+     "weight": 600,
+     "size": 44,
+     "color": "#FFFFFF",
+     "outline": 0,
+     "outline_color": "#000000",
+     "shadow": 0,
+     "box": true,
+     "box_color": "#000000A6",
+     "align": "left",
+     "spacing": 0,
+     "line_height": 1.2
+    },
+    "anim": {
+     "in": "fade",
+     "in_dur": 0.25,
+     "out": "fade",
+     "out_dur": 0.25
+    }
+   },
+   "speed": 1.0,
+   "enabled": true,
+   "link": null,
+   "motion": {
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 1.0,
+    "rot": 0.0,
+    "opacity": 1.0,
+    "fit": "fit"
+   },
+   "crop": {
+    "l": 0.0,
+    "t": 0.0,
+    "r": 0.0,
+    "b": 0.0
+   },
+   "color": {},
+   "filters": [],
+   "volume_db": 0.0,
+   "fade_in": 0.0,
+   "fade_out": 0.0,
+   "keys": {}
+  },
+  {
+   "id": "c68",
+   "type": "text",
+   "track": "T2",
+   "start": 49.2,
+   "dur": 7.2075000000000005,
+   "text": {
+    "content": "11 Effects + Energetic transitions",
+    "preset": "caption",
+    "x": 0.06,
+    "y": 0.075,
+    "times": null,
+    "style": {
+     "font": "Poppins",
+     "weight": 600,
+     "size": 44,
+     "color": "#FFFFFF",
+     "outline": 0,
+     "outline_color": "#000000",
+     "shadow": 0,
+     "box": true,
+     "box_color": "#000000A6",
+     "align": "left",
+     "spacing": 0,
+     "line_height": 1.2
+    },
+    "anim": {
+     "in": "fade",
+     "in_dur": 0.25,
+     "out": "fade",
+     "out_dur": 0.25
+    }
+   },
+   "speed": 1.0,
+   "enabled": true,
+   "link": null,
+   "motion": {
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 1.0,
+    "rot": 0.0,
+    "opacity": 1.0,
+    "fit": "fit"
+   },
+   "crop": {
+    "l": 0.0,
+    "t": 0.0,
+    "r": 0.0,
+    "b": 0.0
+   },
+   "color": {},
+   "filters": [],
+   "volume_db": 0.0,
+   "fade_in": 0.0,
+   "fade_out": 0.0,
+   "keys": {}
+  },
+  {
+   "id": "c74",
+   "type": "text",
+   "track": "T2",
+   "start": 56.7,
+   "dur": 3.703999999999998,
+   "text": {
+    "content": "12 Captions: Big Stack + Cube Rotate",
+    "preset": "caption",
+    "x": 0.06,
+    "y": 0.075,
+    "times": null,
+    "style": {
+     "font": "Poppins",
+     "weight": 600,
+     "size": 44,
+     "color": "#FFFFFF",
+     "outline": 0,
+     "outline_color": "#000000",
+     "shadow": 0,
+     "box": true,
+     "box_color": "#000000A6",
+     "align": "left",
+     "spacing": 0,
+     "line_height": 1.2
+    },
+    "anim": {
+     "in": "fade",
+     "in_dur": 0.25,
+     "out": "fade",
+     "out_dur": 0.25
+    }
+   },
+   "speed": 1.0,
+   "enabled": true,
+   "link": null,
+   "motion": {
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 1.0,
+    "rot": 0.0,
+    "opacity": 1.0,
+    "fit": "fit"
+   },
+   "crop": {
+    "l": 0.0,
+    "t": 0.0,
+    "r": 0.0,
+    "b": 0.0
+   },
+   "color": {},
+   "filters": [],
+   "volume_db": 0.0,
+   "fade_in": 0.0,
+   "fade_out": 0.0,
+   "keys": {}
+  },
+  {
+   "id": "c50",
+   "type": "text",
+   "track": "T1",
+   "start": 36.033333,
+   "dur": 3.5,
+   "text": {
+    "content": "Ansell & Karina\nKaohsiung, Taiwan",
+    "preset": "lower_third",
+    "x": 0.08,
+    "y": 0.72,
+    "times": null,
+    "style": {
+     "font": "Poppins",
+     "weight": 600,
+     "size": 52,
+     "color": "#FFFFFF",
+     "outline": 0,
+     "outline_color": "#000000",
+     "shadow": 0,
+     "box": true,
+     "box_color": "#000000A6",
+     "align": "left",
+     "spacing": 0,
+     "line_height": 1.2
+    },
+    "anim": {
+     "in": "slide_up",
+     "in_dur": 0.4,
+     "out": "fade",
+     "out_dur": 0.3
+    }
+   },
+   "speed": 1.0,
+   "enabled": true,
+   "link": null,
+   "motion": {
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 1.0,
+    "rot": 0.0,
+    "opacity": 1.0,
+    "fit": "fit"
+   },
+   "crop": {
+    "l": 0.0,
+    "t": 0.0,
+    "r": 0.0,
+    "b": 0.0
+   },
+   "color": {},
+   "filters": [],
+   "volume_db": 0.0,
+   "fade_in": 0.0,
+   "fade_out": 0.0,
+   "keys": {}
+  },
+  {
+   "id": "c60",
+   "type": "text",
+   "track": "T1",
+   "start": 44.533333,
+   "dur": 2.1,
+   "text": {
+    "content": "We are going to",
+    "preset": "caption_auto",
+    "x": 0.5,
+    "y": 0.74,
+    "times": null,
+    "anim": {
+     "in": "pop",
+     "in_dur": 0.15,
+     "out": "none",
+     "out_dur": 0
+    },
+    "caption": {
+     "template": "karaoke_line",
+     "style": {
+      "font": "Poppins",
+      "weight": 800,
+      "size": 66,
+      "color": "#FFFFFF",
+      "outline": 5,
+      "shadow": 4,
+      "mode": "karaoke",
+      "active": {
+       "color": "#FFD84D",
+       "scale": 1.08
+      }
+     },
+     "words": [
+      {
+       "w": "We",
+       "t0": 0.011,
+       "t1": 0.511
+      },
+      {
+       "w": "are",
+       "t0": 0.511,
+       "t1": 1.011
+      },
+      {
+       "w": "going",
+       "t0": 1.011,
+       "t1": 1.511
+      },
+      {
+       "w": "to",
+       "t0": 1.511,
+       "t1": 2.011
+      }
+     ]
+    },
+    "style": {
+     "font": "Poppins",
+     "weight": 700,
+     "size": 64,
+     "color": "#FFFFFF",
+     "outline": 4,
+     "outline_color": "#000000",
+     "shadow": 0,
+     "box": false,
+     "box_color": "#000000B3",
+     "align": "center",
+     "spacing": 0,
+     "line_height": 1.2
+    }
+   },
+   "meta": {
+    "subtitle": true
+   },
+   "speed": 1.0,
+   "enabled": true,
+   "link": null,
+   "motion": {
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 1.0,
+    "rot": 0.0,
+    "opacity": 1.0,
+    "fit": "fit"
+   },
+   "crop": {
+    "l": 0.0,
+    "t": 0.0,
+    "r": 0.0,
+    "b": 0.0
+   },
+   "color": {},
+   "filters": [],
+   "volume_db": 0.0,
+   "fade_in": 0.0,
+   "fade_out": 0.0,
+   "keys": {}
+  },
+  {
+   "id": "c61",
+   "type": "text",
+   "track": "T1",
+   "start": 46.633333,
+   "dur": 2.210667,
+   "text": {
+    "content": "E-DA Theme Park today!",
+    "preset": "caption_auto",
+    "x": 0.5,
+    "y": 0.74,
+    "times": null,
+    "anim": {
+     "in": "pop",
+     "in_dur": 0.15,
+     "out": "none",
+     "out_dur": 0
+    },
+    "caption": {
+     "template": "karaoke_line",
+     "style": {
+      "font": "Poppins",
+      "weight": 800,
+      "size": 66,
+      "color": "#FFFFFF",
+      "outline": 5,
+      "shadow": 4,
+      "mode": "karaoke",
+      "active": {
+       "color": "#FFD84D",
+       "scale": 1.08
+      }
+     },
+     "words": [
+      {
+       "w": "E-DA",
+       "t0": 0.011,
+       "t1": 0.536,
+       "emph": true
+      },
+      {
+       "w": "Theme",
+       "t0": 0.536,
+       "t1": 1.061,
+       "emph": true
+      },
+      {
+       "w": "Park",
+       "t0": 1.061,
+       "t1": 1.586,
+       "emph": true
+      },
+      {
+       "w": "today!",
+       "t0": 1.586,
+       "t1": 2.111
+      }
+     ]
+    },
+    "style": {
+     "font": "Poppins",
+     "weight": 700,
+     "size": 64,
+     "color": "#FFFFFF",
+     "outline": 4,
+     "outline_color": "#000000",
+     "shadow": 0,
+     "box": false,
+     "box_color": "#000000B3",
+     "align": "center",
+     "spacing": 0,
+     "line_height": 1.2
+    }
+   },
+   "meta": {
+    "subtitle": true
+   },
+   "speed": 1.0,
+   "enabled": true,
+   "link": null,
+   "motion": {
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 1.0,
+    "rot": 0.0,
+    "opacity": 1.0,
+    "fit": "fit"
+   },
+   "crop": {
+    "l": 0.0,
+    "t": 0.0,
+    "r": 0.0,
+    "b": 0.0
+   },
+   "color": {},
+   "filters": [],
+   "volume_db": 0.0,
+   "fade_in": 0.0,
+   "fade_out": 0.0,
+   "keys": {}
+  },
+  {
+   "id": "c72",
+   "type": "text",
+   "track": "T1",
+   "start": 56.966667,
+   "dur": 3.389833,
+   "text": {
+    "content": "Having fun in Taiwan!",
+    "preset": "caption_auto",
+    "x": 0.5,
+    "y": 0.55,
+    "times": null,
+    "anim": {
+     "in": "pop",
+     "in_dur": 0.15,
+     "out": "none",
+     "out_dur": 0
+    },
+    "caption": {
+     "template": "big_stack",
+     "style": {
+      "font": "Anton",
+      "weight": 400,
+      "size": 120,
+      "case": "upper",
+      "line_height": 1.0,
+      "color": "#FFFFFF",
+      "outline": 0,
+      "shadow": 8,
+      "mode": "karaoke",
+      "layout": "stack",
+      "active": {
+       "color": "#FFE14D",
+       "scale": 1.0
+      }
+     },
+     "words": [
+      {
+       "w": "Having",
+       "t0": -0.01,
+       "t1": 0.69
+      },
+      {
+       "w": "fun",
+       "t0": 0.69,
+       "t1": 1.39
+      },
+      {
+       "w": "in",
+       "t0": 1.39,
+       "t1": 2.09
+      },
+      {
+       "w": "Taiwan!",
+       "t0": 2.09,
+       "t1": 2.79,
+       "emph": true
+      }
+     ]
+    },
+    "style": {
+     "font": "Poppins",
+     "weight": 700,
+     "size": 64,
+     "color": "#FFFFFF",
+     "outline": 4,
+     "outline_color": "#000000",
+     "shadow": 0,
+     "box": false,
+     "box_color": "#000000B3",
+     "align": "center",
+     "spacing": 0,
+     "line_height": 1.2
+    }
+   },
+   "meta": {
+    "subtitle": true
+   },
+   "speed": 1.0,
+   "enabled": true,
+   "link": null,
+   "motion": {
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 1.0,
+    "rot": 0.0,
+    "opacity": 1.0,
+    "fit": "fit"
+   },
+   "crop": {
+    "l": 0.0,
+    "t": 0.0,
+    "r": 0.0,
+    "b": 0.0
+   },
+   "color": {},
+   "filters": [],
+   "volume_db": 0.0,
+   "fade_in": 0.0,
+   "fade_out": 0.0,
+   "keys": {}
+  },
+  {
+   "id": "c31",
+   "type": "media",
+   "asset": "2944a81b54",
+   "track": "V2",
+   "start": 19.033333,
+   "in": 0.0,
+   "out": 6.006,
+   "speed": 1.0,
+   "enabled": true,
+   "link": null,
+   "motion": {
+    "x": 270.0,
+    "y": 0,
+    "scale": 1,
+    "rot": 0.0,
+    "opacity": 1.0,
+    "fit": "fill"
+   },
+   "crop": {
+    "l": 0.25,
+    "t": 0,
+    "r": 0.25,
+    "b": 0
+   },
+   "color": {},
+   "filters": [],
+   "volume_db": 0.0,
+   "fade_in": 0.0,
+   "fade_out": 0.0,
+   "keys": {}
+  },
+  {
+   "id": "c47",
+   "type": "media",
+   "asset": "5e71275887",
+   "track": "V2",
+   "start": 35.033333,
+   "in": 0.0,
+   "out": 5.005,
+   "speed": 1.0,
+   "enabled": true,
+   "link": null,
+   "motion": {
+    "x": 286.2,
+    "y": -508.80000000000007,
+    "scale": 0.38,
+    "rot": 0.0,
+    "opacity": 1.0,
+    "fit": "fit"
+   },
+   "crop": {
+    "l": 0.0,
+    "t": 0.0,
+    "r": 0.0,
+    "b": 0.0
+   },
+   "color": {},
+   "filters": [],
+   "volume_db": 0.0,
+   "fade_in": 0.0,
+   "fade_out": 0.0,
+   "keys": {
+    "motion.scale": [
+     {
+      "t": 0,
+      "v": 0.6,
+      "e": "ease"
+     },
+     {
+      "t": 0.25,
+      "v": 1.05,
+      "e": "ease"
+     },
+     {
+      "t": 0.4,
+      "v": 1.0,
+      "e": "ease"
+     }
+    ],
+    "motion.opacity": [
+     {
+      "t": 0,
+      "v": 0.0,
+      "e": "ease"
+     },
+     {
+      "t": 0.15,
+      "v": 1.0,
+      "e": "ease"
+     }
+    ]
+   }
+  },
+  {
+   "id": "c1",
+   "type": "media",
+   "asset": "eaf289c869",
+   "track": "V1",
+   "start": 0.0,
+   "in": 0.0,
+   "out": 6.0,
+   "speed": 1.0,
+   "link": "L3",
+   "enabled": true,
+   "motion": {
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 1.0,
+    "rot": 0.0,
+    "opacity": 1.0,
+    "fit": "fit"
+   },
+   "crop": {
+    "l": 0.0,
+    "t": 0.0,
+    "r": 0.0,
+    "b": 0.0
+   },
+   "color": {},
+   "filters": [
+    {
+     "type": "night_boost",
+     "amount": 0.7
+    }
+   ],
+   "volume_db": 0.0,
+   "fade_in": 0.0,
+   "fade_out": 0.0,
+   "keys": {}
+  },
+  {
+   "id": "c7",
+   "type": "media",
+   "asset": "2944a81b54",
+   "track": "V1",
+   "start": 6.0,
+   "in": 0.0,
+   "out": 3.0,
+   "speed": 1.0,
+   "link": "L9",
+   "enabled": true,
+   "motion": {
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 1.0,
+    "rot": 0.0,
+    "opacity": 1.0,
+    "fit": "fit"
+   },
+   "crop": {
+    "l": 0.0,
+    "t": 0.0,
+    "r": 0.0,
+    "b": 0.0
+   },
+   "color": {},
+   "filters": [
+    {
+     "type": "warm_sun",
+     "amount": 0.8
+    }
+   ],
+   "volume_db": 0.0,
+   "fade_in": 0.0,
+   "fade_out": 0.0,
+   "keys": {}
+  },
+  {
+   "id": "c17",
+   "type": "media",
+   "asset": "2944a81b54",
+   "track": "V1",
+   "start": 9.0,
+   "in": 0.0,
+   "out": 3.0,
+   "speed": 1.0,
+   "link": null,
+   "enabled": true,
+   "motion": {
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 1.0,
+    "rot": 0.0,
+    "opacity": 1.0,
+    "fit": "fit"
+   },
+   "crop": {
+    "l": 0.0,
+    "t": 0.0,
+    "r": 0.0,
+    "b": 0.0
+   },
+   "color": {},
+   "filters": [
+    {
+     "type": "warm_sun",
+     "amount": 0.8
+    }
+   ],
+   "volume_db": 0.0,
+   "fade_in": 0.0,
+   "fade_out": 0.0,
+   "keys": {},
+   "hold": 3.0,
+   "dur": 2.0
+  },
+  {
+   "id": "c13",
+   "type": "media",
+   "asset": "2944a81b54",
+   "track": "V1",
+   "start": 11.0,
+   "in": 3.0,
+   "out": 6.0,
+   "speed": 1.0,
+   "link": "L14",
+   "enabled": true,
+   "motion": {
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 1.0,
+    "rot": 0.0,
+    "opacity": 1.0,
+    "fit": "fit"
+   },
+   "crop": {
+    "l": 0.0,
+    "t": 0.0,
+    "r": 0.0,
+    "b": 0.0
+   },
+   "color": {},
+   "filters": [
+    {
+     "type": "warm_sun",
+     "amount": 0.8
+    }
+   ],
+   "volume_db": 0.0,
+   "fade_in": 0.0,
+   "fade_out": 0.0,
+   "keys": {}
+  },
+  {
+   "id": "c22",
+   "type": "media",
+   "asset": "5e71275887",
+   "track": "V1",
+   "start": 14.0,
+   "in": 0.0,
+   "out": 5.005,
+   "speed": 1.0,
+   "link": "L24",
+   "enabled": true,
+   "motion": {
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 1.0,
+    "rot": 0.0,
+    "opacity": 1.0,
+    "fit": "fit"
+   },
+   "crop": {
+    "l": 0.0,
+    "t": 0.0,
+    "r": 0.0,
+    "b": 0.0
+   },
+   "color": {},
+   "filters": [],
+   "volume_db": 0.0,
+   "fade_in": 0.0,
+   "fade_out": 0.0,
+   "keys": {
+    "motion.scale": [
+     {
+      "t": 0,
+      "v": 1.0,
+      "e": "linear"
+     },
+     {
+      "t": 5.005,
+      "v": 1.15,
+      "e": "linear"
+     }
+    ]
+   }
+  },
+  {
+   "id": "c28",
+   "type": "media",
+   "asset": "eaf289c869",
+   "track": "V1",
+   "start": 19.033333,
+   "in": 0.0,
+   "out": 6.0,
+   "speed": 1.0,
+   "link": "L30",
+   "enabled": true,
+   "motion": {
+    "x": -270.0,
+    "y": 0,
+    "scale": 1,
+    "rot": 0.0,
+    "opacity": 1.0,
+    "fit": "fill"
+   },
+   "crop": {
+    "l": 0.25,
+    "t": 0,
+    "r": 0.25,
+    "b": 0
+   },
+   "color": {},
+   "filters": [],
+   "volume_db": 0.0,
+   "fade_in": 0.0,
+   "fade_out": 0.0,
+   "keys": {}
+  },
+  {
+   "id": "c34",
+   "type": "media",
+   "asset": "5e71275887",
+   "track": "V1",
+   "start": 25.033333,
+   "in": 0.0,
+   "out": 3.0,
+   "speed": 0.5,
+   "link": "L36",
+   "enabled": true,
+   "motion": {
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 1.0,
+    "rot": 0.0,
+    "opacity": 1.0,
+    "fit": "fit"
+   },
+   "crop": {
+    "l": 0.0,
+    "t": 0.0,
+    "r": 0.0,
+    "b": 0.0
+   },
+   "color": {},
+   "filters": [],
+   "volume_db": 0.0,
+   "fade_in": 0.0,
+   "fade_out": 0.0,
+   "keys": {}
+  },
+  {
+   "id": "c39",
+   "type": "media",
+   "asset": "eaf289c869",
+   "track": "V1",
+   "start": 31.033333,
+   "in": 0.004,
+   "out": 4.004,
+   "speed": 1.0,
+   "link": "L41",
+   "enabled": true,
+   "motion": {
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 1.0,
+    "rot": 0.0,
+    "opacity": 1.0,
+    "fit": "fit"
+   },
+   "crop": {
+    "l": 0.0,
+    "t": 0.0,
+    "r": 0.0,
+    "b": 0.0
+   },
+   "color": {},
+   "filters": [],
+   "volume_db": 0.0,
+   "fade_in": 0.0,
+   "fade_out": 0.0,
+   "keys": {},
+   "reverse": true
+  },
+  {
+   "id": "c44",
+   "type": "media",
+   "asset": "2944a81b54",
+   "track": "V1",
+   "start": 35.033333,
+   "in": 0.0,
+   "out": 5.0,
+   "speed": 1.0,
+   "link": "L46",
+   "enabled": true,
+   "motion": {
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 1.0,
+    "rot": 0.0,
+    "opacity": 1.0,
+    "fit": "fit"
+   },
+   "crop": {
+    "l": 0.0,
+    "t": 0.0,
+    "r": 0.0,
+    "b": 0.0
+   },
+   "color": {},
+   "filters": [],
+   "volume_db": 0.0,
+   "fade_in": 0.0,
+   "fade_out": 0.0,
+   "keys": {}
+  },
+  {
+   "id": "c51",
+   "type": "media",
+   "asset": "eaf289c869",
+   "track": "V1",
+   "start": 40.033333,
+   "in": 0.0,
+   "out": 4.0,
+   "speed": 1.0,
+   "link": "L53",
+   "enabled": true,
+   "motion": {
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 1.0,
+    "rot": 0.0,
+    "opacity": 1.0,
+    "fit": "fit"
+   },
+   "crop": {
+    "l": 0.0,
+    "t": 0.0,
+    "r": 0.0,
+    "b": 0.0
+   },
+   "color": {
+    "contrast": 0.08
+   },
+   "filters": [
+    {
+     "type": "lut",
+     "file": "library/luts/teal_orange.cube",
+     "amount": 0.85
+    },
+    {
+     "type": "vignette",
+     "amount": 0.3,
+     "size": 0.75
+    },
+    {
+     "type": "letterbox",
+     "size": 0.09
+    }
+   ],
+   "volume_db": 0.0,
+   "fade_in": 0.0,
+   "fade_out": 0.0,
+   "keys": {},
+   "meta": {
+    "look": "cinematic_teal"
+   }
+  },
+  {
+   "id": "c57",
+   "type": "media",
+   "asset": "2944a81b54",
+   "track": "V1",
+   "start": 44.033333,
+   "in": 0.0,
+   "out": 5.0,
+   "speed": 1.0,
+   "link": "L59",
+   "enabled": true,
+   "motion": {
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 1.0,
+    "rot": 0.0,
+    "opacity": 1.0,
+    "fit": "fit"
+   },
+   "crop": {
+    "l": 0.0,
+    "t": 0.0,
+    "r": 0.0,
+    "b": 0.0
+   },
+   "color": {
+    "exposure": 0.1,
+    "vibrance": 0.2
+   },
+   "filters": [
+    {
+     "type": "lut",
+     "file": "library/luts/crisp_travel.cube",
+     "amount": 1.0
+    }
+   ],
+   "volume_db": 0.0,
+   "fade_in": 0.0,
+   "fade_out": 0.0,
+   "keys": {},
+   "meta": {
+    "look": "bright_travel"
+   }
+  },
+  {
+   "id": "c64",
+   "type": "media",
+   "asset": "5e71275887",
+   "track": "V1",
+   "start": 49.033333,
+   "in": 0.0,
+   "out": 2.5,
+   "speed": 1.0,
+   "enabled": true,
+   "link": null,
+   "motion": {
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 1.0,
+    "rot": 0.0,
+    "opacity": 1.0,
+    "fit": "fit"
+   },
+   "crop": {
+    "l": 0.0,
+    "t": 0.0,
+    "r": 0.0,
+    "b": 0.0
+   },
+   "color": {},
+   "filters": [
+    {
+     "type": "vhs",
+     "amount": 0.8
+    }
+   ],
+   "volume_db": 0.0,
+   "fade_in": 0.0,
+   "fade_out": 0.0,
+   "keys": {}
+  },
+  {
+   "id": "c65",
+   "type": "media",
+   "asset": "eaf289c869",
+   "track": "V1",
+   "start": 51.566667,
+   "in": 0.0,
+   "out": 2.5,
+   "speed": 1.0,
+   "enabled": true,
+   "link": null,
+   "motion": {
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 1.0,
+    "rot": 0.0,
+    "opacity": 1.0,
+    "fit": "fit"
+   },
+   "crop": {
+    "l": 0.0,
+    "t": 0.0,
+    "r": 0.0,
+    "b": 0.0
+   },
+   "color": {},
+   "filters": [
+    {
+     "type": "duotone",
+     "amount": 1,
+     "hue": 0.72
+    }
+   ],
+   "volume_db": 0.0,
+   "fade_in": 0.0,
+   "fade_out": 0.0,
+   "keys": {}
+  },
+  {
+   "id": "c66",
+   "type": "media",
+   "asset": "2944a81b54",
+   "track": "V1",
+   "start": 54.066667,
+   "in": 0.0,
+   "out": 2.5,
+   "speed": 1.0,
+   "enabled": true,
+   "link": null,
+   "motion": {
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 1.0,
+    "rot": 0.0,
+    "opacity": 1.0,
+    "fit": "fit"
+   },
+   "crop": {
+    "l": 0.0,
+    "t": 0.0,
+    "r": 0.0,
+    "b": 0.0
+   },
+   "color": {},
+   "filters": [
+    {
+     "type": "camera_shake",
+     "amount": 0.6,
+     "speed": 1
+    }
+   ],
+   "volume_db": 0.0,
+   "fade_in": 0.0,
+   "fade_out": 0.0,
+   "keys": {}
+  },
+  {
+   "id": "c70",
+   "type": "media",
+   "asset": "5e71275887",
+   "track": "V1",
+   "start": 56.566667,
+   "in": 0.0,
+   "out": 4.004,
+   "speed": 1.0,
+   "enabled": true,
+   "link": null,
+   "motion": {
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 1.0,
+    "rot": 0.0,
+    "opacity": 1.0,
+    "fit": "fit"
+   },
+   "crop": {
+    "l": 0.0,
+    "t": 0.0,
+    "r": 0.0,
+    "b": 0.0
+   },
+   "color": {},
+   "filters": [],
+   "volume_db": 0.0,
+   "fade_in": 0.0,
+   "fade_out": 0.0,
+   "keys": {}
+  },
+  {
+   "id": "c2",
+   "type": "media",
+   "asset": "eaf289c869",
+   "track": "A1",
+   "start": 0.0,
+   "in": 0.0,
+   "out": 6.0,
+   "speed": 1.0,
+   "link": "L3",
+   "enabled": true,
+   "motion": {
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 1.0,
+    "rot": 0.0,
+    "opacity": 1.0,
+    "fit": "fit"
+   },
+   "crop": {
+    "l": 0.0,
+    "t": 0.0,
+    "r": 0.0,
+    "b": 0.0
+   },
+   "color": {},
+   "filters": [],
+   "volume_db": 0.0,
+   "fade_in": 0.0,
+   "fade_out": 0.0,
+   "keys": {}
+  },
+  {
+   "id": "c8",
+   "type": "media",
+   "asset": "2944a81b54",
+   "track": "A1",
+   "start": 6.0,
+   "in": 0.0,
+   "out": 3.0,
+   "speed": 1.0,
+   "link": "L9",
+   "enabled": true,
+   "motion": {
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 1.0,
+    "rot": 0.0,
+    "opacity": 1.0,
+    "fit": "fit"
+   },
+   "crop": {
+    "l": 0.0,
+    "t": 0.0,
+    "r": 0.0,
+    "b": 0.0
+   },
+   "color": {},
+   "filters": [],
+   "volume_db": 0.0,
+   "fade_in": 0.0,
+   "fade_out": 0.0,
+   "keys": {}
+  },
+  {
+   "id": "c15",
+   "type": "media",
+   "asset": "2944a81b54",
+   "track": "A1",
+   "start": 11.0,
+   "in": 3.0,
+   "out": 6.0,
+   "speed": 1.0,
+   "link": "L14",
+   "enabled": true,
+   "motion": {
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 1.0,
+    "rot": 0.0,
+    "opacity": 1.0,
+    "fit": "fit"
+   },
+   "crop": {
+    "l": 0.0,
+    "t": 0.0,
+    "r": 0.0,
+    "b": 0.0
+   },
+   "color": {},
+   "filters": [],
+   "volume_db": 0.0,
+   "fade_in": 0.0,
+   "fade_out": 0.0,
+   "keys": {}
+  },
+  {
+   "id": "c23",
+   "type": "media",
+   "asset": "5e71275887",
+   "track": "A1",
+   "start": 14.0,
+   "in": 0.0,
+   "out": 5.005,
+   "speed": 1.0,
+   "link": "L24",
+   "enabled": true,
+   "motion": {
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 1.0,
+    "rot": 0.0,
+    "opacity": 1.0,
+    "fit": "fit"
+   },
+   "crop": {
+    "l": 0.0,
+    "t": 0.0,
+    "r": 0.0,
+    "b": 0.0
+   },
+   "color": {},
+   "filters": [],
+   "volume_db": 0.0,
+   "fade_in": 0.0,
+   "fade_out": 0.0,
+   "keys": {}
+  },
+  {
+   "id": "c29",
+   "type": "media",
+   "asset": "eaf289c869",
+   "track": "A1",
+   "start": 19.033333,
+   "in": 0.0,
+   "out": 6.0,
+   "speed": 1.0,
+   "link": "L30",
+   "enabled": true,
+   "motion": {
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 1.0,
+    "rot": 0.0,
+    "opacity": 1.0,
+    "fit": "fit"
+   },
+   "crop": {
+    "l": 0.0,
+    "t": 0.0,
+    "r": 0.0,
+    "b": 0.0
+   },
+   "color": {},
+   "filters": [],
+   "volume_db": 0.0,
+   "fade_in": 0.0,
+   "fade_out": 0.0,
+   "keys": {}
+  },
+  {
+   "id": "c35",
+   "type": "media",
+   "asset": "5e71275887",
+   "track": "A1",
+   "start": 25.033333,
+   "in": 0.0,
+   "out": 3.0,
+   "speed": 0.5,
+   "link": "L36",
+   "enabled": true,
+   "motion": {
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 1.0,
+    "rot": 0.0,
+    "opacity": 1.0,
+    "fit": "fit"
+   },
+   "crop": {
+    "l": 0.0,
+    "t": 0.0,
+    "r": 0.0,
+    "b": 0.0
+   },
+   "color": {},
+   "filters": [],
+   "volume_db": 0.0,
+   "fade_in": 0.0,
+   "fade_out": 0.0,
+   "keys": {}
+  },
+  {
+   "id": "c40",
+   "type": "media",
+   "asset": "eaf289c869",
+   "track": "A1",
+   "start": 31.033333,
+   "in": 0.004,
+   "out": 4.004,
+   "speed": 1.0,
+   "link": "L41",
+   "enabled": true,
+   "motion": {
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 1.0,
+    "rot": 0.0,
+    "opacity": 1.0,
+    "fit": "fit"
+   },
+   "crop": {
+    "l": 0.0,
+    "t": 0.0,
+    "r": 0.0,
+    "b": 0.0
+   },
+   "color": {},
+   "filters": [],
+   "volume_db": 0.0,
+   "fade_in": 0.0,
+   "fade_out": 0.0,
+   "keys": {},
+   "reverse": true
+  },
+  {
+   "id": "c45",
+   "type": "media",
+   "asset": "2944a81b54",
+   "track": "A1",
+   "start": 35.033333,
+   "in": 0.0,
+   "out": 5.0,
+   "speed": 1.0,
+   "link": "L46",
+   "enabled": true,
+   "motion": {
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 1.0,
+    "rot": 0.0,
+    "opacity": 1.0,
+    "fit": "fit"
+   },
+   "crop": {
+    "l": 0.0,
+    "t": 0.0,
+    "r": 0.0,
+    "b": 0.0
+   },
+   "color": {},
+   "filters": [],
+   "volume_db": 0.0,
+   "fade_in": 0.0,
+   "fade_out": 0.0,
+   "keys": {}
+  },
+  {
+   "id": "c52",
+   "type": "media",
+   "asset": "eaf289c869",
+   "track": "A1",
+   "start": 40.033333,
+   "in": 0.0,
+   "out": 4.0,
+   "speed": 1.0,
+   "link": "L53",
+   "enabled": true,
+   "motion": {
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 1.0,
+    "rot": 0.0,
+    "opacity": 1.0,
+    "fit": "fit"
+   },
+   "crop": {
+    "l": 0.0,
+    "t": 0.0,
+    "r": 0.0,
+    "b": 0.0
+   },
+   "color": {},
+   "filters": [],
+   "volume_db": 0.0,
+   "fade_in": 0.0,
+   "fade_out": 0.0,
+   "keys": {}
+  },
+  {
+   "id": "c58",
+   "type": "media",
+   "asset": "2944a81b54",
+   "track": "A1",
+   "start": 44.033333,
+   "in": 0.0,
+   "out": 5.005,
+   "speed": 1.0,
+   "link": "L59",
+   "enabled": true,
+   "motion": {
+    "x": 0.0,
+    "y": 0.0,
+    "scale": 1.0,
+    "rot": 0.0,
+    "opacity": 1.0,
+    "fit": "fit"
+   },
+   "crop": {
+    "l": 0.0,
+    "t": 0.0,
+    "r": 0.0,
+    "b": 0.0
+   },
+   "color": {},
+   "filters": [],
+   "volume_db": 0.0,
+   "fade_in": 0.0,
+   "fade_out": 0.0,
+   "keys": {}
+  }
+ ],
+ "transitions": [
+  {
+   "id": "x4",
+   "type": "cross_dissolve",
+   "a": null,
+   "b": "c1",
+   "dur": 0.5,
+   "params": {}
+  },
+  {
+   "id": "x10",
+   "type": "inward_wipe",
+   "a": "c1",
+   "b": "c7",
+   "dur": 0.8,
+   "params": {}
+  },
+  {
+   "id": "x25",
+   "type": "push_left",
+   "a": "c13",
+   "b": "c22",
+   "dur": 0.5,
+   "params": {}
+  },
+  {
+   "id": "x54",
+   "type": "light_leak_flash",
+   "a": "c44",
+   "b": "c51",
+   "dur": 0.8,
+   "params": {}
+  },
+  {
+   "id": "x67",
+   "type": "whip_pan",
+   "a": "c65",
+   "b": "c66",
+   "dur": 0.45,
+   "params": {}
+  },
+  {
+   "id": "x71",
+   "type": "cube_rotate",
+   "a": "c66",
+   "b": "c70",
+   "dur": 0.7,
+   "params": {}
+  },
+  {
+   "id": "x73",
+   "type": "dip_black",
+   "a": "c70",
+   "b": null,
+   "dur": 1.0,
+   "params": {}
+  }
+ ],
+ "markers": [
+  {
+   "id": "m6",
+   "t": 0.0,
+   "label": "1  Look: Night Boost + dissolve in",
+   "color": "amber"
+  },
+  {
+   "id": "m12",
+   "t": 6.0,
+   "label": "2  Inward wipe + Warm look",
+   "color": "amber"
+  },
+  {
+   "id": "m19",
+   "t": 9.0,
+   "label": "3  Freeze frame (2 s hold)",
+   "color": "amber"
+  },
+  {
+   "id": "m21",
+   "t": 11.0,
+   "label": "   …clip continues after the hold",
+   "color": "amber"
+  },
+  {
+   "id": "m27",
+   "t": 14.0,
+   "label": "4  Keyframes: Ken Burns zoom + push",
+   "color": "amber"
+  },
+  {
+   "id": "m33",
+   "t": 19.033333,
+   "label": "5  Split screen (V1 left, V2 right)",
+   "color": "amber"
+  },
+  {
+   "id": "m38",
+   "t": 25.033333,
+   "label": "6  Slow motion 50%",
+   "color": "amber"
+  },
+  {
+   "id": "m43",
+   "t": 31.033333,
+   "label": "7  Reverse (timecode counts down)",
+   "color": "amber"
+  },
+  {
+   "id": "m49",
+   "t": 35.033333,
+   "label": "8  Picture-in-picture (pop in)",
+   "color": "amber"
+  },
+  {
+   "id": "m56",
+   "t": 40.033333,
+   "label": "9 Look preset: Cinematic Teal (LUT)",
+   "color": "amber"
+  },
+  {
+   "id": "m63",
+   "t": 44.033333,
+   "label": "10 Captions: Karaoke Line",
+   "color": "amber"
+  },
+  {
+   "id": "m69",
+   "t": 49.033333,
+   "label": "11 Effects + Energetic transitions",
+   "color": "amber"
+  },
+  {
+   "id": "m75",
+   "t": 56.566667,
+   "label": "12 Captions: Big Stack + Cube Rotate",
+   "color": "amber"
+  }
+ ],
+ "settings": {
+  "snap": true,
+  "normalize_lufs": -14.0,
+  "duck_db": -12.0,
+  "brand": {
+   "asset": null,
+   "enabled": false,
+   "position": "tr",
+   "size": 0.18,
+   "opacity": 0.85,
+   "margin": 0.04
+  },
+  "glossary": [
+   "E-DA Theme Park",
+   "Kaohsiung",
+   "Ansell",
+   "Karina",
+   "Fo Guang Shan",
+   "Hsinchu",
+   "MOTC",
+   "Tourism Administration",
+   "Taiwan"
+  ]
+ },
+ "next_id": 76
+}

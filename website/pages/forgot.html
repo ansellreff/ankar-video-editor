@@ -1,0 +1,27 @@
+<!-- Reset your password | Get a one-time code by email to set a new AnKar Video Editor password. -->
+<main class="auth">
+  <div class="card">
+    <h1>Reset your password</h1>
+    <p id="forgotOff" class="msg info hidden">Password reset by email isn't switched on for this site yet. If you can't remember your password, create a new account.</p>
+    <form id="step1" class="stack">
+      <p class="muted small">If your account has an email saved, we'll send a 6-digit code to it.</p>
+      <label>Username
+        <input type="text" name="username" autocomplete="username" required autocapitalize="none" spellcheck="false"></label>
+      <p class="msg hidden"></p>
+      <button type="submit" class="btn primary">Send me a code</button>
+    </form>
+    <form id="step2" class="stack hidden">
+      <p id="sent" class="msg hidden"></p>
+      <label>6-digit code
+        <input type="text" name="code" inputmode="numeric" autocomplete="one-time-code" maxlength="6" required class="code-input"></label>
+      <label>New password
+        <input type="password" name="new" autocomplete="new-password" required></label>
+      <label>New password again
+        <input type="password" name="new2" autocomplete="new-password" required></label>
+      <p class="msg hidden"></p>
+      <button type="submit" class="btn primary">Set new password</button>
+      <p class="hint">The code works once, for 15 minutes. All other signed-in browsers are signed out.</p>
+    </form>
+  </div>
+  <div class="alt"><a href="/signin">Back to sign in</a></div>
+</main>

@@ -122,6 +122,9 @@ input:focus { outline: 2px solid rgba(246,168,28,.55); outline-offset: 1px; bord
 .doc ol.big { padding-left: 22px; }
 .doc ol.big > li { margin: 16px 0; padding-left: 6px; }
 .doc ol.big > li::marker { color: var(--accent); font-weight: 800; }
+ol.steps-small { padding-left: 20px; margin: 10px 0; }
+ol.steps-small > li { margin: 6px 0; }
+ol.steps-small > li::marker { color: var(--accent); font-weight: 700; }
 table { width: 100%; border-collapse: collapse; font-size: 14.5px; }
 th, td { text-align: left; padding: 9px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
 th { color: var(--text-3); font-weight: 600; font-size: 13px; text-transform: uppercase; letter-spacing: .05em; }

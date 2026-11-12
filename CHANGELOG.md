@@ -3,6 +3,10 @@
 What changed in each version of AnKar Video Editor, in plain words. Newest first.
 (The app's Help ▸ What's new and the website read this file — keep the `## X.Y.Z — YYYY-MM-DD` headings and `- ` bullets.)
 
+## 1.0.1 — 2026-11-12
+- Fixed: the optional offline AI voice installer ("Install local AI voice (optional).bat") failed because PyTorch needed setuptools.
+- Website: clearer sign-up (no phone app or authenticator needed) and step-by-step authenticator help on the admin page.
+
 ## 1.0.0 — 2026-11-12
 - First public version: a Premiere-style video editor that runs on your own PC in your browser (http://localhost:8765).
 - Timeline with video, text, music, sound-effect and narration tracks; trim, split, ripple, speed, reverse, freeze frame, keyframes.

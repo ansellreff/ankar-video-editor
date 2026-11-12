@@ -3,7 +3,7 @@
 Bump with `python -m scripts.release X.Y.Z` (it also checks CHANGELOG.md has notes for that version)."""
 import os
 
-VERSION = "1.0.0"
+VERSION = "1.0.1"
 NAME = "AnKar Video Editor"
 # The landing page on Vercel. The app only ever reads <SITE>/api/latest (no account, no personal data is sent).
 SITE = os.environ.get("ANKAR_SITE", "https://ankar-video-editor.vercel.app").rstrip("/")

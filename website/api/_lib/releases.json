@@ -2,6 +2,14 @@
  "repo": "ansellreff/ankar-video-editor",
  "releases": [
   {
+   "version": "1.0.1",
+   "date": "2026-11-12",
+   "notes": [
+    "Fixed: the optional offline AI voice installer (\"Install local AI voice (optional).bat\") failed because PyTorch needed setuptools.",
+    "Website: clearer sign-up (no phone app or authenticator needed) and step-by-step authenticator help on the admin page."
+   ]
+  },
+  {
    "version": "1.0.0",
    "date": "2026-11-12",
    "notes": [

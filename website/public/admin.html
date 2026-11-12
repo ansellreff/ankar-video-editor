@@ -30,7 +30,14 @@
 
   <div id="setup" class="card hidden">
     <h2>Set up your authenticator</h2>
-    <p class="muted">The admin page needs a 6-digit code from an authenticator app (Google Authenticator, Microsoft Authenticator, 1Password…) every time.</p>
+    <p class="muted">The admin page needs a 6-digit code from an authenticator app (Google Authenticator, Microsoft Authenticator, 1Password…) every time. (Only the admin page needs this — normal accounts never do.)</p>
+    <ol class="steps-small">
+      <li>On your phone, install a free authenticator app: <b>Google Authenticator</b> or <b>Microsoft Authenticator</b> (App Store / Play Store).</li>
+      <li>Type your password below and press <b>Show the setup code</b>.</li>
+      <li>In the app, tap <b>+</b> → <b>Scan a QR code</b> and point the camera at the code that appears here.</li>
+      <li>The app now shows “AnKar” with a 6-digit code that changes every 30 seconds. Type the current code below and press <b>Confirm</b>.</li>
+    </ol>
+    <p class="muted small">Keep the app on your phone — you'll need a fresh code each time you open this page.</p>
     <form id="setupForm" class="stack">
       <label>Your password <input type="password" name="password" autocomplete="current-password" required></label>
       <p class="msg hidden"></p>
